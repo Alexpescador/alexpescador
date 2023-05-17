@@ -1,0 +1,1246 @@
+<!doctype html>
+<!--doctype informar ao agente de usuario a versão do html que deve ser
+renderizada-->
+<html lang="pt-br"> 
+    
+    <head>
+        <title>pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Alex">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+     
+              
+           <style>
+                    
+                body{
+                    font-family: 'Open Sans', sans-serif;
+                    color: #666;
+                    line-height: 1.8;
+                    letter-spacing: 1px;
+                }    
+                    
+                  
+               
+
+                
+
+
+               a{
+                 
+                  transition: color .5s linear, border .5s linear;
+                  text-decoration: none;
+                  border-bottom: 1px dotted;
+                  color: #49bf9d
+
+                }
+
+
+
+
+                a:hover{
+
+                    border-bottom: transparent;
+               
+                }
+
+
+                h5{
+                    margin: 2em; 
+                }
+
+
+
+                          
+               .main-header{
+
+                     position: fixed;
+                     top: 0;
+                     left: 0;
+                     height: 100%;
+                     width: 30%;
+                     background-image: url(imagens/overlay.png) , url(imagens/bg1.jpg);
+                     background-position: top;
+                     background-size: cover;
+                     padding: 10px;
+                     text-align: right;
+                     
+                }    
+                             
+                    
+                   
+                    
+                .main-hero{
+                     
+                     width: 65%;
+                     margin-left: 30%;
+                     padding: 124px 54px 72px;
+                     box-sizing: border-box;
+                     overflow: auto;
+
+                   
+                
+                }
+
+
+                
+                .main-header-h1{
+                        
+                     font-size: 20px; 
+                     line-height: 1.9;
+                     color: white;
+                     font-weight: normal;
+                     color: rgba(255, 255, 255, .5);
+                     
+                }
+
+
+                .main-header-h1 strong{
+
+                      color: rgb(241, 241, 9);
+                      font-weight: normal;
+
+                 }
+
+
+                 
+                  sub, sup{
+                        
+                        font-size: 13px;
+                        
+                  }
+
+
+                  blockquote{
+                        
+                        border-left: 5px solid #837272cc;
+                        margin: 2em 0;
+                        padding: .1em 0 .1em 1.5em;
+                       
+                  }
+                  
+                  
+
+                  code{
+                      
+                       font-family: "Courier New", monospace;
+                       color: #929292;
+
+                  }
+
+
+
+                  ul, ol{
+                        
+                       margin: 0;
+                       padding: 0;
+                       list-style-position: inside;
+                       padding: 1.1em;
+                       
+                        
+                  }
+                  
+                  
+
+                  .ul-alternativa{
+
+                      list-style-type: none;
+                   
+                      
+                    }
+                  
+
+
+                  .ul-alternativa li{
+
+                     border-bottom: 2px solid #f3eded;  
+                     
+                  }
+
+                  
+
+                 .ul-alternativa li:last-child{
+
+                    border: 0;
+                 }  
+
+                 
+
+                 .ul-icons{
+
+                    list-style-type: none;
+                  
+
+                 }
+
+
+
+                 .ul-icons li{
+
+                    display: inline-block;
+                    font-size: 1em;
+                    color: #49bf9d
+                 }
+                      
+            
+  
+
+                
+                 li{
+                     
+                      padding: .5em;
+                  }
+                  
+                  h3, h4{
+
+                    padding: 2em;
+                  }
+    
+
+
+                 .main-header-link{
+
+                    color: inherit;
+
+                 }
+
+                 
+
+
+                  
+                 .main-header-link:hover{
+                         
+                    color: #49bf9d;
+
+                 }
+
+
+                 
+
+                 .row{
+
+                    overflow: auto;
+                 }
+                 
+                  
+
+
+                 .col-2{
+
+                    width: 48%;
+                    float: left;
+                    
+                 }
+
+                 
+
+                .col-2:first-child{
+
+                    margin-right: 2%;
+                } 
+
+                
+
+
+                .col-2:last-child{
+
+                    margin-left: 2%;
+                }
+
+                
+                
+                 
+                
+                 .col-2-3{
+                  
+                    width: 66%;
+                    float: left;
+                 }   
+
+                       
+            
+                 .col-1-3{
+                    
+                    
+                    width: 33%;
+                    float: left;
+                    margin-left: 1%;
+                 }
+                    
+                    
+                 
+
+
+                  
+                 input, textarea{
+                  
+                    width: 100%;
+                    box-sizing: border-box;
+                 }  
+
+
+                
+                 input[type="radio"], input[type="checkbox"]{
+                    width: auto;
+                 }
+
+
+                 textarea{
+
+                    height: 13em;
+                 }
+                   
+                    
+                  
+                 input, textarea{
+
+                    background-color: rgb(218, 218, 226);
+                    padding: 18px;
+                    border-radius: 4px;
+                    border: 2px solid transparent;
+                    margin-bottom: 5px;
+                 }
+
+                 
+                 input:focus, textarea:focus{
+                     
+                     border: 2px solid #143f52;
+                     outline: none;     
+                 }
+                 
+
+                 .send{
+                   
+                     width: 8em;
+                     background-color: rgb(250, 246, 246);
+                     color: inherit;
+                 }
+               
+                 .button-default-download{
+
+                    background-color: #143f52;
+                    border: 2px solid #816f6f;
+                    color: white;
+                    padding: .4em 1.5em;
+                    border-radius: 6px;
+                    font-size: .9em;
+                } 
+
+                
+                .button-default-button{
+
+                    background-color: #143f52;
+                    border: 2px solid #816f6f;
+                    color: white;
+                    padding: 0.3em 2.0em;
+                    border-radius: 6px;
+                    font-size: 1em;
+                }
+               
+                
+
+
+                .button-default-upload{
+                    
+                    background-color: #143f52;
+                    border: 2px solid #816f6f;
+                    color: white;
+                    padding: 0.3em 2.2em;
+                    border-radius: 6px;
+                    font-size: 1em;
+
+
+                }
+                 
+                
+
+                .button-default-home{
+
+                    background-color: #143f52;
+                    border: 2px solid #816f6f;
+                    color: white;
+                    padding: .3em 2.5em; 
+                    border-radius: 6px;
+                    font-size: 1em;
+                }
+                
+                
+
+                .button-default-search{
+                    background-color: white;
+                    border: 2px solid #efefef; 
+                    color: inherit; 
+                    display: block;
+                    text-align: center;
+                    border-radius: 6px;
+                    font-size: 1em;  
+                                  
+                    
+                    
+                    
+                }
+                 
+
+
+                .button-default-offer{
+
+                    background-color: #143f52;
+                    border: 2px solid #efefef; 
+                    color: white;
+                    display: block;
+                    text-align: center;
+                    border-radius: 6px;
+                    font-size: 1em;
+                    padding: .1em;
+                    
+                
+                
+                
+                }
+                
+                 
+
+
+
+                .button-default-sign{
+
+                    background-color: #143f52;
+                    border: 2px solid #efefef;
+                    color: white;
+                    display: block;
+                    text-align: center;
+                    border-radius: 6px;
+                    font-size: 1em;
+                    padding: .1em;
+
+                }
+
+                
+
+                .button-default-card{
+
+                    background-color: white;
+                    border: 2px solid #efefef;
+                    color: inherit;
+                    display: block;
+                    text-align: center;
+                    border-radius: 6px;
+                    font: 1em;
+
+
+                }
+
+                 
+            
+
+
+                .table{
+
+                    width: 100%;
+                    margin: 0 0 2m 0;
+                    border-collapse: collapse;
+                    
+
+                }    
+
+                 
+                .table td{
+
+                    padding: .35em;
+                    text-align: center;
+                    border: 1px solid rgb(247, 176, 126);
+                    
+                }
+
+
+                .table th{
+
+                    background-color: #e4dcdc;
+                    border: 1px solid rgb(226, 185, 156);
+                    padding: .35em;
+                    
+                    
+                }
+                    
+                
+                .table tbody tr:nth-child(even) td{
+
+                    background-color: rgb(247, 238, 238);
+                }
+                
+                 
+                
+                
+            
+                 
+
+
+
+
+
+
+             
+            
+
+
+           </style>   
+              
+        
+    
+    
+    
+    <body>
+          <header class="main-header">
+            <a href="index.html" class="main-header-link">
+            <img src="imagens/avatar2.jpg" alt="exemplo">      
+            </a>
+
+          
+
+            <h1 class="main-header-h1">Trabalho e groselha de <br> 
+             <strong>Alex Rodrigues Vitorino</strong>, <br>
+             um rapaz muito dedicado <br>
+             retirado de <a href="http://html5sup.net" class="main-header-link">hmtl5sup.net</a>
+           
+            </h1>
+         
+        </header>
+           
+          <main class="main-hero">
+            
+            <section class="main-content-section">
+            
+                <h2> O que é aside?</h2>
+
+            <p> O elemento <strong>HTML ASIDE</strong> representa uma seção de uma página que consiste de conteúdo do seu entorno, <br> que 
+                poderia ser considerado separado do conteúdo. Essas seções são, muitas vezes, representadas com barras laterais.<br>
+                Elas muitas vezes contem explicações laterais, como a definição de um glossário; conteúdo vagamente relacionado, como <br>
+                avisos; a biografia do autor; ou, em aplicações web, informações de perfil ou links de blogs relacionados.</p>
+                
+                <a href="#" title="Veja mas" class="button default"> Veja mais!!!</a>
+            </section>  
+            
+            <section class="main-section">
+                <h3> Trabalhos Recentes</h3>
+               
+                <action class="main-action-card">
+                  
+                    <a href="imagens/imagens1.jpg">
+                    <img src="imagens/bird.jpg" alt="">
+                   </a> 
+                   <p> A colorful bird</p>
+
+                   
+
+                   <a href="imagens/imagens2.jpg">
+                    <img src="imagens/forest.jpg" alt="">
+                   </a>     
+                   
+                   <p> A beaultil Forest</p>
+
+                   <a href="imagens/imagens3.jpg">
+                    <img src="imagens/red car.jpg" alt="">
+
+                   </a>
+
+                   <p> A red car</p>
+
+                   <a href="imagens/imagens4.jpg">
+                    <img src="imagens/The sea.jpg" alt="">
+
+                   </a>
+
+                   <p> The pale blue sky</p>
+
+                   <a href="imagens/imagens5.jpg">
+                    <img src="imagens/the old bolt.jpg" alt="">
+                   
+                  </a>
+
+                  <p>The old boat</p>
+                </action>
+
+                <a href="#" title="Veja meu portfolio completo"> Veja meu portfolio completo...</a>
+               
+            </section>
+
+            <section class="main-saction">
+
+                <h3> Get in Touch</h3>
+
+                <div class="row">
+                    <div class="col-2-3">
+                        <div class="row">
+                          <div class="col-2">
+                            <form action="#" method="POST">
+                          
+                        
+                            <label form="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                           </diV>
+                           
+                           <div class="col-2">
+                          
+                            <label form="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Digite um e-mail valido">       
+                           </div>
+                         </div>
+                       
+                         
+                         
+
+                            <label form="mensagem"> Digite sua mensagem</label>
+                            <textarea name="mensagem" id="mensagem"></textarea>
+                            <input type="submit" value="Enviar" class="send">    
+                        </form>
+                     </div>  
+                    
+                    
+                                    
+                     <div class="col-1-3">
+                        
+                               
+                        <address>
+                            <p>
+                             <span>Endereço</span>
+                              Rua: Professor Álvaro Rodrigues n ° 1234 Botafogo
+                            </p>
+         
+                            <p>
+                             <span>Telefone</span>
+                             000-000-000
+                            </p>
+         
+                            <p>
+                             <span>E-mail</span>
+                             email@admin.com 
+                            </p>
+         
+                         </address>  
+                         </div>
+                     </div>
+
+
+                             
+                
+                         
+                <section>
+                    <h3>Elements</h3>
+
+                    <h4>Text</h4>
+                    <p>This <b>bold</b> and this is <strong>strong </strong>. This is
+                        <i>italic </i> and this is <em>emphasized</em>. This is 
+                        <sup>superscript</sup> text and this is <sub> subscript</sub> text. This 
+                        is <u> underlinedand</u> this is <code> code: for (;;) {...}</code> . Finally, this 
+                        is <a href="link">a link. </a>
+                
+                    </p> 
+                </section>
+
+                <blockquote cite="http://developer.mozilla.org">
+                        Esta é uma citação tirada da 
+                        Mozilla Developer Center. 
+
+                    <p>According to Mozzilla's website.</p>   
+                    
+                    <q cite="http://www.mozilla.org/en-US/about/history/details/"> Firefox 1.0
+                        was released in 2004 and become a big success  </q>
+
+                   
+                    
+                </blockquote>
+
+
+                <h4>Lists</h4>
+
+                <div class="row">
+                    <div class="col-2">
+                        <h5>Lista não Ordenadas</h5>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li>Item 4</li>
+                            <li>Item 5</li>
+                        </ul>
+                    
+                        <h5>Listas Ordenadas</h5>
+
+                        <ol><li>Primeiro</li>
+                            <li>Segundo</li>
+                            <li>Terceiro</li>
+                            <li>Quarto</li>
+                            <li>Quinto</li>
+                        </ol>
+                       </div> 
+                       <div class="col-2">
+                        <h5>listas alternativas</h5>
+                        <ul class="ul-alternativa">
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                            <li>item 4</li>
+                            <li>item 5</li>
+         
+                         </ul>
+
+                         <h5>Icons</h5>
+                         
+                        <ul class="ul-icons">
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-spotify"></i></li>
+                        <li><i class="fa-brands fa-xbox"></i></li>
+                        </ul>
+                        </div>
+                        </div>
+                        
+                        
+                        
+                        <h5>Action</h5> 
+
+                         <div class="row">
+                            <div class="col-2">
+                                
+                          <p>
+                            <a href="#" class="button-default-download"> DOWNLOADS</a>
+                            <a href="#" class="button-default-button"> BUTTON</a>       
+                         </p>
+                        
+                         <p>
+                            <a href="#" class="button-default-upload"> UPLOAD</a>
+                            <a href="#" class="button-default-home">HOME</a>
+                         </p>
+                         
+                         </div>
+                           
+                         
+                         <div class="col-2">
+                         <p>
+                            <a href="#" class="button-default-search"> SEARCH</a>
+                            <a href="#" class="button-default-offer"> OFFERS</a>  
+                        </p>
+                        
+                        <p>
+                            <a href="#" class="button-default-sign"> SIGN UP</a>
+                            <a href="#" class="button-default-card">ADD CARD</a>
+                        </p>  
+                         </div>
+                       </div>
+
+
+
+                                         
+
+                        
+                         
+                 <h4>Table</h4>
+                  
+                 <h5>Default</h5>
+
+
+                <table class="table">
+
+                    <caption>Tabela de preços dos cursos</caption>
+
+
+                    <thead>
+                        <tr>
+                            <th>Área</th>
+                            <th>Cursos</th>
+                            <th>Investimentos</th>
+                        </tr>
+                    </thead>
+                    
+                        
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">VALORES SUJEITO A ALTERAÇÕES SEM PRÉVIO AVISO</td>
+                        </tr>
+                   </tfoot>  
+
+                    <tbody>
+                          
+                          <tr>
+                              <td rowspan="3">Design</td>
+                              <td>Indesign</td>
+                              <td>R$ 1.000,00</td>
+                         </tr>
+
+
+                         <tr>
+                             <td>Photoshop</td>
+                             <td>R$ 1.000,00</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Ilustrator</td>
+                            <td>R$ 1.000,00</td>
+                        </tr>
+                        
+
+                        <tr> 
+                            <td rowspan="4">Development</td> 
+                            <td>HTML 5</td>
+                            <td>R$ 1.000,00</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>CSS 3</td>
+                            <td>R$ 1.000,00</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Jacascript</td>
+                            <td>R$ 1.000,00</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>PHP</td>
+                            <td>R$ 1.000,00</td>
+                        </tr>
+
+                    </tbody>
+                    
+                    </table>
+
+                    <table class=" table table-alternate">  
+
+
+                        <caption>Tabela de preço e acessórios</caption>
+
+
+                        <thead>
+                             <tr>
+                                 <th>Nome</th>
+                                 <th>Descrição</th>
+                                 <th>Preço</th>
+                             </tr>
+                        </thead>
+
+
+                        <tfoot>
+                                <td colspan="3">VALORES SUJEITO A ALTERAÇÕES SEM PRÉVIO AVISO</td>
+                        </tfoot>
+
+
+                        <tbody>
+
+                             <tr>
+                                <td rowspan="3">Dispositivo</td>
+                                <td>Notebook</td>
+                                <td>R$ 3.000,00</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Celular iphone</td>
+                                <td>R$ 10.000,00</td>
+                            </tr>
+
+
+                            <tr> 
+                                <td>Roteador</td>
+                                <td>R$ 600,00</td>
+                            </tr>
+
+
+                            <tr>
+                               <td rowspan="4">Acessórios</td>
+                               <td>Pendrive Gb</td>
+                               <td>R$ 50.00</td>
+                            </tr>
+
+
+                            <tr>
+                               <td>HD SSD 500 GB </td>
+                               <td>R$ 250,00</td>
+                            </tr>
+
+                            <tr>
+                                <td>Fonte ATX 500w</td>
+                                <td>R$ 130,00</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Mouse</td>
+                                <td>R$ 70,00</td>
+                            </tr>
+                        
+                        
+                        </tbody>
+
+
+                        </table>
+                             
+                                                          
+                    <h5>Buttons</h5>
+                       
+                            
+                         
+                        <p><input type="submit" class="button-default" value="Default">
+                        <input type="submit" class="button-default-stroke" value="Default">
+                        </p>
+                        <p><input type="submit" class="button-default button-default-small" value="Deafault">
+                        <input type="submit" class="button-default button-default-small button-default-stroke" value="Default">
+                        </p>
+                        <p><input type="submit" class="button-default button-default-full button-default-stroke" value="Dfault">
+                        <input type="submit" class="button-default button-default-full button-default-stroke" value="Default"> 
+                        </p>
+                        <p><input type="submit" class="button-default button-default-full button-default-small" value="Default">
+                        <input type="submit" class="button-default button-default-full button-default-small button-default-stroke" value="Deafault">
+                        </p> 
+                        
+                         
+
+                    
+
+                  
+
+
+                  <form action="#" method="POST" class="login">
+
+                    <h5>Forms</h5>
+
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="nome">
+
+                    <label form="email"> E-mail</label>
+                    <input type="text" name="email" id="email">
+
+
+                    <select>
+
+                        <option value="0"> Select...</option>
+                        <option value="1">- Category -</option>
+                        <option value="2">- Manufacturing -</option>
+                        <option value="3">- Administration -</option>
+                        <option value="4">- Human resources -</option>
+
+                   </select>
+
+
+                   <label><input type="radio" name="mensagem" value="prioridade"> Baixa Prioridade</label>
+                   <label><input type="radio" name="mensagem" value="prioridade"> Média Prioridade</label>
+                   <input type="radio" name="mensagem" value="prioridade"> Alta prioridade</label>
+                   
+                  <label><input type="checkbox" name="copy" value="1"> Envie-me uma cópia</label> 
+                  <label><input type="checkbox" name="human" value="1"> Sou Humano</label>
+
+
+
+                  <label for="msg">Mensagem:</label>
+                  <textarea placeholder="Digite uma mensagem" id="msg"></textarea>
+                
+                
+                
+                  <input type="submit" class="button-default" value="Enviar">
+                  <input type="reset" class="button-default-stroke" value="Limpar">
+                
+                
+                </form>
+                  
+                
+                
+                <section class="main-content-section">
+                    <h3>Imagens</h3>
+
+                    <div class="gallery-img1">
+                      <img src="imagens/imagens 1.jpg" alt="">
+                    </div>
+
+
+                    <div class="gallery-img2">
+                     
+                     <img src="imagens/imagens 01.jpg"alt=""> 
+                     <img src="imagens/imagens 2.jpg" alt="">
+                     <img src="imagens/imagens 3.jpg" alt="">
+                     <img src="imagens/imagens 4.jpg" alt="">
+                     <img src="imagens/imagens 5.jpg" alt="">
+                     <img src="imagens/imagens 6.jpg" alt="">
+                    </div>
+                    
+                    
+                    <h4>Left &amp; Right</h4>
+
+
+                    <p>
+                    <img src="imagens/perfil.jpg" alt="" class="imgagem-left"> The graphic and typographic operators know this well, in reality all the professions dealing with the
+                    universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
+                    It is a sequence of Latin words that, as they are positioned, do not form sentences with a complete sense,but give life to a test text
+                    useful to fill spaces that will subsequently be occupied from ad hoc texts composed by communication professionals.
+                    It is certainly the most famous placeholder text even if there are different versions distinguishable from the order in which the Latin
+                    words are repeated.
+                    Lorem ipsum contains the typefaces more in use, an aspect that allows you to have an overview of the rendering of the text in terms of
+                    font choice and font size .
+                    When referring to Lorem ipsum, different expressions are used, namely fill text , fictitious text , blind text or placeholder text : in
+                    short, its meaning can also be zero, but its usefulness is so clear as to go through the centuries and resist the ironic and
+                    modern versions that came with the arrival of the web. 
+                    « Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis
+                    aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum. »     
+                    </p>
+
+                    <p>
+                    <img src="imagens/perfil 1.jpg" alt="" class="imagem-right"> Lorem ipsum dolor sit amet. Ea recusandae galisum ut ipsa officiis 33 aliquid tempora.
+                    Est rerum quisquam et aliquam atque et nemo nisi eos sapiente iusto et voluptatibus amet ab deserunt repellat. Sit
+                    dolor quas aut quas rerum cum molestiae tempora aut maxime tempore et deserunt deserunt aut voluptate enim est sint ipsum!
+                    Aut rerum voluptatem aut quas similique sed fuga corporis ut officiis neque? Non quibusdam inventore non expedita dolores?
+                    Nam sint assumenda ut totam modi et aliquid tenetur? Ut repudiandae saepe in voluptatibus nesciunt et,
+                    maxime ullam aut Quis omnis sed nihil itaque. Et laborum autem ut dolorum nesciunt sed minus nihil.
+                    Est velit cupiditate vel mollitia harum est commodi iure est accusamus aspernatur eum dolorem error. t quia accusamus aut iusto dolores
+                    aut harum corporis qui dolor fugiat. Qui quia aliquam vel dolores accusamus ut adipisci laudantium ut dignissimos expedita est voluptatem
+                    velit aut quia animi. Ut architecto reprehenderit sed soluta excepturi a quae odit aut dicta perspiciatis et aperiam.
+                   </p>
+
+                </section>
+
+
+            </section>
+
+
+
+             </main>
+
+
+                 
+
+        <footer>
+
+        </footer>
+
+        
+
+
+     
+      
+   </body>
+
+
+</html>
+
+                    
+             
+
+
+
+
+
+
+
+                    
+
+
+
+
+
+                
+
+
+               
+
+
+
+
+
+
+
+
+                
+                      
+                        
+                
+
+        
+                   
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  
+
+
+
+
+
+                    
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                 
+                   
+                     
+                      
+                  
+
+
+                  
+
+
+                    
+
+                           
+                            
+                            
+
+
+                    
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+
+                
+
+               
+            
+
+           
+
+                  
+                
+
+
+
+                
+           
+               
+
+            
+                
+              
+            
+            
+            
+
+
+
+
+   
+
+
+
+                  
+               
+
+
+
+                  
+
+
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+                
+                
+                
+
+                
+                     
+
+                    
+
+                
+
+                
+          
+
+
+
+
+
+                   
+
+
+
+
+     
+
+
+                
+            
